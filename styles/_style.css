@@ -43,10 +43,27 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+}
+
+header > h1 {
+    z-index: 1;
+}
+
+#header-nav {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    padding: 1rem;
+}
+
+#header-nav a {
+    margin: 0.2rem;
 }
 
 footer {

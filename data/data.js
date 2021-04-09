@@ -17,9 +17,11 @@ export const quests = {
                 }
             }
         },
+        image: '',
         links: [
             'https://mineralseducationcoalition.org/minerals-database/aluminum/',
-            'https://en.wikipedia.org/wiki/Aluminium'
+            'https://en.wikipedia.org/wiki/Aluminium',
+            'https://aluminium-stewardship.org/wp-content/uploads/2017/04/Mining-the-Aluminium-Industry-and-Indigenous-Peoples-Nov2015.pdf'
 
         ]
     },

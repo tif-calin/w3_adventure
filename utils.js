@@ -11,4 +11,4 @@ export function findByProperty(arr, val, key = 'id', all = false) {
     };
 
     return items;
-};
+}

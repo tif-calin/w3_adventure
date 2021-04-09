@@ -1,0 +1,15 @@
+
+.main-section ol {
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
+.quest {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.quest a {
+    text-decoration: none;
+}

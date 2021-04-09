@@ -6,6 +6,7 @@ const initialize = () => {
     questList.innerHTML = '';
     for (let quest of Object.keys(quests)) {
         const item = document.createElement('li');
+        item.classList.add('quest');
         const anchor = document.createElement('a');
 
         anchor.href = `../quest/?=${quest}`;

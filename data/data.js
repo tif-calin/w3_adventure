@@ -1,4 +1,4 @@
-export const quests = {
+const quests = {
     aluminum: {
         start: 'welc',
         messages: {
@@ -43,3 +43,5 @@ export const quests = {
     vibranium: {},
     zinc: {}
 };
+
+export default quests;

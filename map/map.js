@@ -9,7 +9,7 @@ const initialize = () => {
         item.classList.add('quest');
         const anchor = document.createElement('a');
 
-        anchor.href = `../quest/?=${quest}`;
+        anchor.href = `../quest/?id=${quest}`;
         anchor.textContent = quest;
         item.appendChild(anchor);
         questList.appendChild(item);

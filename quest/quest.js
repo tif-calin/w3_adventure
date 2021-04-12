@@ -52,7 +52,7 @@ function loadQuest(questName) {
 
     // load first message
     loadMessage(quest['start']);
-};
+}
 
 loadQuest(questName);
 

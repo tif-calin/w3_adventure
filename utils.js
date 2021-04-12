@@ -7,8 +7,8 @@ export function findByProperty(arr, val, key = 'id', all = false) {
         if (item[key] === val) {
             if (!all) return item;
             items.push(item);
-        };
-    };
+        }
+    }
 
     return items;
 }

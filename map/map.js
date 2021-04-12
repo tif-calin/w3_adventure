@@ -12,6 +12,10 @@ const initialize = () => {
         anchor.href = `../quest/?id=${quest}`;
         anchor.textContent = quest;
         item.appendChild(anchor);
+        if (!quests[quest].implemented) {
+            item.classList.add('unimplemented');
+            item.textContent += ' (not yet implemented)';
+        }
         questList.appendChild(item);
     }
 };

@@ -10,11 +10,19 @@ const quests = {
                     'response2': 'aaa2'
                 }
             },
-            'aaa2': {
+            'aaaa': {
                 prompt: 'message2',
                 responses: {
                     'response3': null,
-                    'response4': 'welc'
+                    'response4': 'welc',
+                    'response5': 'bbbb'
+                }
+            },
+            'bbbb': {
+                prompt: 'message3',
+                responses: {
+                    'response6': null,
+                    'response7': 'aaaa'
                 }
             }
         },

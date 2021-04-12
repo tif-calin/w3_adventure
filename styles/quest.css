@@ -1,0 +1,11 @@
+.message label {
+    margin: 1rem;
+}
+
+.message input {
+    display: none;
+}
+
+.message input:checked + div{
+    font-weight: 900;
+}

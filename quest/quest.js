@@ -17,18 +17,26 @@ function loadMessage(messageID) {
     paragraph.innerText = message.prompt;
     mainSection.appendChild(paragraph);
 
+    const form = document.createElement('form');
+    form.name = messageID;
+    form.classList.add('message');
     for (let resp of Object.keys(message.responses)) {
         const label = document.createElement('label');
+
         const radio = document.createElement('input');
-
-        label.textContent = resp;
-
         radio.type = 'radio';
         radio.name = messageID;
-        label.appendChild(radio);
 
-        mainSection.appendChild(label);
+        const div = document.createElement('div');
+        div.classList.add('response');
+        div.textContent = resp;
+
+        label.appendChild(radio);
+        label.appendChild(div);
+        form.appendChild(label);
     }
+    mainSection.appendChild(form);
+    latestForm = form;
 }
 
 function loadQuest(questName) {

@@ -16,6 +16,7 @@ function loadMessage(messageID) {
     const message = quest.messages[messageID];
 
     const paragraph = document.createElement('p');
+    paragraph.classList.add('story-message');
     paragraph.innerText = message.prompt;
     mainSection.appendChild(paragraph);
 

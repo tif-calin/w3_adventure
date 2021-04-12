@@ -21,22 +21,22 @@
         </nav>
     </header>
     <main>
-        <img class="main-logo" src="assets/dice.png" alt="an image of a DnD dice being stretched and rotated as if its being spun">
         <section class="main-section">
             <h2>
                 Welcome to Alchemy RPG
             </h2>
             <hr>
-            <p>
+            <img class="main-logo" src="assets/dice.png" alt="an image of a DnD dice being stretched and rotated as if its being spun">
+            <p class="npc-message">
                 Who's there?
             </p>
-            <p>
-                My name is <input type="text">.
+            <p class="char-message">
+                My name is <input type="text" id="input-name">.
             </p>
-            <p>
-                <span>{{name}}</span>? Is that really you? It's been ages. Listen, explaining the lore isn't a stretch goal so I won't waste your time, but we are in dire need. The 14 metals needed to keep the Alchemy Lab (aluminum, beryllium, brass, copper, gold, iron, lithium, mercury, nickel, osmium, silver, titanium, vibranium, and zinc) in harmony are being threatened by Cthulhu themselves. We need you to travel to the centers of where these metals are gathered so we can inspect how Cthulhu is keeping.
+            <p class="npc-message hidden">
+                <span class="name">{{name}}</span>? Is that really you? It's been ages. Listen, explaining the lore isn't a stretch goal so I won't waste your time, but we are in dire need. The 14 metals needed to keep the Alchemy Lab (aluminum, beryllium, brass, copper, gold, iron, lithium, mercury, nickel, osmium, silver, titanium, vibranium, and zinc) in harmony are being threatened by Cthulhu themselves. We need you to travel to the centers of where these metals are gathered so we can inspect how Cthulhu is keeping.
             </p>
-            <p>
+            <p class="char-message hidden">
                 Oh... ok sure, I don't really have anything else to do... 
             </p>
         </section>

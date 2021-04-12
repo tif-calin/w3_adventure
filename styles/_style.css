@@ -26,13 +26,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #eee;
     margin-bottom: calc(var(--footer-height));
 }
 
 section {
     background-color: var(--color5);
     width: 1000px;
-    max-width: 70%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +122,29 @@ header img {
 }
 
 p {
-    margin: var(--gutter);
+    align-self: flex-start;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1.5rem;
+    margin: 0.25rem;
+    min-width: 25%;
+}
+
+.char-message {
+    align-self: flex-start;
+    background-color: hsl(140, 60%, 75%);
+    box-shadow: -0.5rem 0.5rem 0.15rem #ddd;
+}
+
+.story-message {
+    align-self: center;
+    box-shadow: 0rem 0.5rem 0.15rem #ddd;
+}
+
+.npc-message {
+    align-self: flex-end;
+    box-shadow: 0.5rem 0.5rem 0.15rem #ddd;
 }
   
 footer {
@@ -133,6 +156,10 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.hidden {
+    display: none;
 }
 
 .wrapper-h, .wrapper-v {

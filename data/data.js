@@ -6,23 +6,23 @@ const quests = {
             'welc': {
                 prompt: 'message1',
                 responses: {
-                    'response1': 'aaa2',
-                    'response2': 'aaa2'
+                    'response1 (takes you to message2)': 'aaaa',
+                    'response2 (takes you to message2)': 'aaaa'
                 }
             },
             'aaaa': {
                 prompt: 'message2',
                 responses: {
-                    'response3': null,
-                    'response4': 'welc',
-                    'response5': 'bbbb'
+                    'response3 (win condition)': null,
+                    'response4 (takes you to message1)': 'welc',
+                    'response5 (takes you to message3)': 'bbbb'
                 }
             },
             'bbbb': {
                 prompt: 'message3',
                 responses: {
-                    'response6': null,
-                    'response7': 'aaaa'
+                    'response6 (win condition)': null,
+                    'response7 (takes you to message2)': 'aaaa'
                 }
             }
         },

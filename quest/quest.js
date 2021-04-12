@@ -5,11 +5,12 @@ const questName = (new URLSearchParams(window.location.search)).get('id');
 const quest = quests[questName];
 
 const mainSection = document.querySelector('.quest-section');
+const btnNext = document.querySelector('#next');
 let latestForm = null;
 
 function loadMessage(messageID) {
     // will load the latest message as well as form
-    if (latestForm) for (let input of latestForm.querySelectAll('*')) input.disabled = true;
+    if (latestForm) for (let input of latestForm.querySelectorAll('*')) input.disabled = true;
 
     const message = quest.messages[messageID];
 
@@ -25,6 +26,7 @@ function loadMessage(messageID) {
 
         const radio = document.createElement('input');
         radio.type = 'radio';
+        radio.value = resp;
         radio.name = messageID;
 
         const div = document.createElement('div');
@@ -53,3 +55,14 @@ function loadQuest(questName) {
 };
 
 loadQuest(questName);
+
+btnNext.addEventListener('click', () => {
+    // check that an option was selected
+
+    // load the next message
+    const selectedResp = latestForm.querySelector('input:checked').value;
+    const selectedMssg = quest.messages[latestForm.name].responses[selectedResp];
+
+    // if message is null, quest completed 
+    if (selectedMssg) loadMessage(selectedMssg);
+});

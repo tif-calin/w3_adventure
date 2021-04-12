@@ -35,45 +35,97 @@ const quests = {
         ]
     },
     beryllium: {
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
         links: [
             'https://mineralseducationcoalition.org/minerals-database/beryllium/'
         ]
     },
     brass: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     copper: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     gold: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     iron: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     lithium: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     mercury: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     nickel: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     osmium: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     silver: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     titanium: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     vibranium: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     },
     zinc: {
-        implemented: false
+        implemented: false,
+        start: '',
+        messages: {},
+        image: '',
+        links: []
     }
 };
 

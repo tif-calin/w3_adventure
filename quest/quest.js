@@ -10,7 +10,8 @@ let latestForm = null;
 
 function loadMessage(messageID) {
     // will load the latest message as well as form
-    if (latestForm) for (let input of latestForm.querySelectorAll('*')) input.disabled = true;
+    if (latestForm) for (let input of latestForm.querySelectorAll('input')) input.disabled = true;
+    if (latestForm) for (let label of latestForm.querySelectorAll('label')) label.classList.add('disabled');
 
     const message = quest.messages[messageID];
 

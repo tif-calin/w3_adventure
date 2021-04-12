@@ -12,3 +12,7 @@ export function findByProperty(arr, val, key = 'id', all = false) {
 
     return items;
 }
+
+export function capitalizeFirstLetter(word) {
+    return word[0].toUpperCase() + word.slice(1);
+}

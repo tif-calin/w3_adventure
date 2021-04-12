@@ -1,19 +1,20 @@
 const quests = {
     aluminum: {
+        implemented: true,
         start: 'welc',
         messages: {
             'welc': {
-                prompt: 'You step off the plane into beautiful Suriname where aluminum bauxite ore is the number one export.',
+                prompt: 'message1',
                 responses: {
                     'response1': 'aaa2',
                     'response2': 'aaa2'
                 }
             },
             'aaa2': {
-                prompt: 'prompt',
+                prompt: 'message2',
                 responses: {
-                    'response1': null,
-                    'response2': 'welc'
+                    'response3': null,
+                    'response4': 'welc'
                 }
             }
         },
@@ -30,18 +31,42 @@ const quests = {
             'https://mineralseducationcoalition.org/minerals-database/beryllium/'
         ]
     },
-    brass: {},
-    copper: {},
-    gold: {},
-    iron: {},
-    lithium: {},
-    mercury: {},
-    nickel: {},
-    osmium: {},
-    silver: {},
-    titanium: {},
-    vibranium: {},
-    zinc: {}
+    brass: {
+        implemented: false
+    },
+    copper: {
+        implemented: false
+    },
+    gold: {
+        implemented: false
+    },
+    iron: {
+        implemented: false
+    },
+    lithium: {
+        implemented: false
+    },
+    mercury: {
+        implemented: false
+    },
+    nickel: {
+        implemented: false
+    },
+    osmium: {
+        implemented: false
+    },
+    silver: {
+        implemented: false
+    },
+    titanium: {
+        implemented: false
+    },
+    vibranium: {
+        implemented: false
+    },
+    zinc: {
+        implemented: false
+    }
 };
 
 export default quests;

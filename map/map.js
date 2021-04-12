@@ -1,4 +1,4 @@
-import { quests } from '../data/data.js';
+import quests from '../data/data.js';
 
 const questList = document.querySelector('.quest-list');
 

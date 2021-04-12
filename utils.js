@@ -7,8 +7,12 @@ export function findByProperty(arr, val, key = 'id', all = false) {
         if (item[key] === val) {
             if (!all) return item;
             items.push(item);
-        };
-    };
+        }
+    }
 
     return items;
-};
+}
+
+export function capitalizeFirstLetter(word) {
+    return word[0].toUpperCase() + word.slice(1);
+}

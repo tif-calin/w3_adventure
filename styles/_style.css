@@ -38,8 +38,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--gutter) 0;
-    margin: var(--gutter) 0;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
 header {

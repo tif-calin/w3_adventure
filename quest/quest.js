@@ -1,5 +1,6 @@
 import quests from '../data/data.js';
 import { findByProperty, capitalizeFirstLetter } from '../utils.js';
+import { completeQuest } from '../utils_localstorage.js';
 
 const questName = (new URLSearchParams(window.location.search)).get('id');
 const quest = quests[questName];
@@ -60,10 +61,18 @@ loadQuest(questName);
 
 btnNext.addEventListener('click', () => {
     // check that an option was selected
+    if (!latestForm.querySelector('input:checked')) return false;
 
     // load the next message
     const selectedResp = latestForm.querySelector('input:checked').value;
     const selectedMssg = quest.messages[latestForm.name].responses[selectedResp];
+
+    // check if win condition
+    if (!selectedMssg) {
+        completeQuest(questName);
+        alert(`You aquired ${questName}!`);
+        window.location = '../map/';
+    }
 
     // if message is null, quest completed 
     if (selectedMssg) loadMessage(selectedMssg);

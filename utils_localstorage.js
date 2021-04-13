@@ -4,6 +4,14 @@ function saveToLocal(key, val) {
     localStorage.setItem(key, JSON.stringify(val));
 }
 
+function getFromLocal(key) {
+    return JSON.parse(localStorage.getItem(key));
+}
+
+export function getUser() {
+    return getFromLocal(USER);
+}
+
 export function createUser(name) {
     const user = {
         name: name,
@@ -14,7 +22,7 @@ export function createUser(name) {
 }
 
 export function completeQuest(metal) {
-    const user = localStorage.getItem(USER);
+    const user = getFromLocal(USER);
     user.inventory[metal] = true;
 
     saveToLocal(USER, user);

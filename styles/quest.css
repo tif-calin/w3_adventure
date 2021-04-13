@@ -6,6 +6,11 @@
     display: none;
 }
 
-.message input:checked + div{
+.disabled {
+    opacity: 50%;
+}
+
+.message input:checked + div {
     font-weight: 900;
+    filter: drop-shadow(5px 5px 5px hsl(180, 50%, 50%));
 }

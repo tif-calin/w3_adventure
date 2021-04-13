@@ -16,7 +16,7 @@ export function createUser(name) {
     const user = {
         name: name,
         inventory: {}
-    }
+    };
 
     saveToLocal(USER, user);
 }

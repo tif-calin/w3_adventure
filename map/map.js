@@ -1,4 +1,5 @@
 import quests from '../data/data.js';
+import { getUser } from '../utils_localstorage.js';
 
 const questList = document.querySelector('.quest-list');
 
@@ -22,6 +23,13 @@ const initialize = () => {
         if (!quests[quest].implemented) {
             item.classList.add('unimplemented');
             item.textContent += ' (not yet implemented)';
+        }
+
+        // check if quest was completed
+        const user = getUser();
+        if (user.inventory[quest]) {
+            item.classList.add('completed');
+            item.textContent += '';
         }
 
         // display the quest

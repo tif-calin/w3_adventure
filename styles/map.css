@@ -1,3 +1,6 @@
+.main-section a:visited {
+    color: gray;
+}
 
 .main-section ol {
     align-self: flex-start;
@@ -12,4 +15,13 @@
 
 .quest a {
     text-decoration: none;
+}
+
+.completed {
+    color: green;
+    text-decoration: line-through;
+}
+
+.completed a::after {
+    content: " ✔️";
 }

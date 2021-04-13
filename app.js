@@ -4,6 +4,9 @@ const inpName = document.querySelector('#input-name');
 const spnNames = document.querySelectorAll('.name');
 
 // initialize state
+const initialize = () => {
+    
+}
 
 // set event listeners to update state and DOM
 inpName.addEventListener('keypress', event => {

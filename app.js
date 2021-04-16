@@ -10,6 +10,7 @@ const resetPage = name => {
     for (let hidden of document.querySelectorAll('.hidden')) hidden.classList.remove('hidden');
 
     inpName.disabled = true;
+    inpName.value = getUser().name;
 };
 
 const initialize = () => {

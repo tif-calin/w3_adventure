@@ -3,6 +3,16 @@ import { getUser } from '../utils_localstorage.js';
 
 const questList = document.querySelector('.quest-list');
 
+const didWin = () => {
+    let qTotal = 0;
+    let qDone = 0;
+    for (let q of Object.keys(quests)) if (quests[q].implemented) qTotal++;
+    for (let q of Object.values(user.inventory)) if (q) qDone++;
+
+    if (qTotal - qDone <= 0) return true;
+    return false;
+};
+
 const initialize = () => {
     // reload list of quests
     questList.innerHTML = '';
@@ -34,6 +44,15 @@ const initialize = () => {
 
         // display the quest
         questList.appendChild(item);
+    }
+
+    // check for win
+    didwin = didWin();
+
+    if (didwin) {
+        alert('You did it! You\'ve acquired all the sacred metals and restored the Alchemy World Order!');
+        localStorage.clear();
+        window.location = '../';
     }
 };
 

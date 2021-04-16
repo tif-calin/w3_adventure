@@ -41,24 +41,24 @@ const quests = {
             'aaaa': {
                 prompt: 'message1 Berylium is most often obtained from the mineral beryl.',
                 responses: {
-                    'response1': null,
-                    'response2': 'bbbb',
-                    'response3': 'cccc'
+                    'response1 (win condition)': null,
+                    'response2 (takes you to message2)': 'bbbb',
+                    'response3 (takes you to message3)': 'cccc'
                 }
             },
             'bbbb': {
                 prompt: 'The US, China, and Khazakstan are the only three countries that produce this metal in commercial amounts.',
                 responses: {
-                    'response3': 'aaaa',
+                    'response3 (takes you to message1)': 'aaaa',
                     'response4': null,
-                    'response5': 'cccc'
+                    'response5 (takes you to message3)': 'cccc'
                 }
             },
             'cccc': {
                 prompt: 'It is a key component in aerospace and electronics and useful in creating nuclear weapons. It is also one of the most toxic chemicals.',
                 responses: {
-                    'response6': 'aaaa',
-                    'response7': 'bbbb',
+                    'response6 (takes you to message1)': 'aaaa',
+                    'response7 (takes you to message2)': 'bbbb',
                     'response8': null
                 }
             }
@@ -77,17 +77,17 @@ const quests = {
             'aaaa': {
                 prompt: 'Brass is an alloy of copper and zinc. The distinction between brass and bronze is largely historical.',
                 responses: {
-                    'response1': 'bbbb',
-                    'response2': 'aaaa',
-                    'response3': 'bbbb'
+                    'response1 (takes you to message2)': 'bbbb',
+                    'response2 (repeats message)': 'aaaa',
+                    'response3 (takes you to message2)': 'bbbb'
                 }
             },
             'bbbb': {
                 prompt: 'Automotive, music, and metalworking are the top 3 industries that use brass.',
                 responses: {
-                    'response1': 'bbbb',
-                    'response2': null,
-                    'response3': null
+                    'response1 (takes you to message2)': 'bbbb',
+                    'response2 (win condition)': null,
+                    'response3 (win condition)': null
                 }
             }
         },
@@ -164,25 +164,25 @@ const quests = {
             'aaaa': {
                 prompt: 'Titanium primarily occurs in rutile and ilmenite which is spread throughout Earth\'s crust and lithosphere.',
                 responses: {
-                    'response1': 'bbbb',
-                    'response2': 'aaaa',
-                    'response3': 'bbbb'
+                    'response1 (takes you to message2)': 'bbbb',
+                    'response2 (repeats message)': 'aaaa',
+                    'response3 (takes you to message2)': 'bbbb'
                 }
             },
             'bbbb': {
                 prompt: 'The top producers of titanium are Australia, South Africa, and Canada which together produce nearly half of all commercial titanium. India (8.6%), Mozambique (7.7%), China (7.5%), Vietnam (7.3%), and Ukraine (5.3%) are the next top producing countries. ',
                 responses: {
-                    'response1': 'bbbb',
-                    'response2': 'cccc',
-                    'response3': null
+                    'response1 (repeats message)': 'bbbb',
+                    'response2 (takes you to message3)': 'cccc',
+                    'response3 (win condition)': null
                 }
             },
             'cccc': {
                 prompt: 'Titanium is used in aerospace for producing jet engine parts, airplane bodies, rockets, satellites, missiles, compressors, fan blades, landing gear, flaps, spoilers, engine compartments, wing beams, fuel tanks, and boosters.',
                 responses: {
-                    'response1': 'bbbb',
-                    'response2': null,
-                    'response3': 'aaaa'
+                    'response1 (takes you to message2)': 'bbbb',
+                    'response2 (win condition)': null,
+                    'response3 (takes you to message1)': 'aaaa'
                 }
             }
         },
@@ -201,14 +201,14 @@ const quests = {
             'aaaa': {
                 prompt: 'Vibranium is faaaaaake.',
                 responses: {
-                    'response1': 'bbbb',
-                    'response3': 'bbbb'
+                    'response1': 'bbbb (takes you to message2)',
+                    'response3': 'bbbb (takes you to message2)'
                 }
             },
             'bbbb': {
                 prompt: 'I hate that I didn\'t realize that',
                 responses: {
-                    'response1': 'bbbb',
+                    'response1 (takes you to message2)': 'bbbb',
                     'response2': null,
                     'response3': null
                 }

@@ -64,7 +64,8 @@ btnNext.addEventListener('click', () => {
     if (!latestForm.querySelector('input:checked')) return false;
 
     // load the next message
-    const selectedResp = latestForm.querySelector('input:checked').value;
+    const formData = new FormData(latestForm);
+    const selectedResp = formData.get(latestForm.name);
     const selectedMssg = quest.messages[latestForm.name].responses[selectedResp];
 
     // check if win condition

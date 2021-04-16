@@ -48,6 +48,12 @@ const initialize = () => {
 
     // check for win
     didwin = didWin();
+
+    if (didwin) {
+        alert('You did it! You\'ve acquired all the sacred metals and restored the Alchemy World Order!');
+        localStorage.clear();
+        window.location = '../';
+    }
 };
 
 initialize();

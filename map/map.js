@@ -4,6 +4,8 @@ import { getUser } from '../utils_localstorage.js';
 const questList = document.querySelector('.quest-list');
 
 const didWin = () => {
+    const user = getUser();
+
     let qTotal = 0;
     let qDone = 0;
     for (let q of Object.keys(quests)) if (quests[q].implemented) qTotal++;
@@ -47,7 +49,7 @@ const initialize = () => {
     }
 
     // check for win
-    didwin = didWin();
+    const didwin = didWin();
 
     if (didwin) {
         alert('You did it! You\'ve acquired all the sacred metals and restored the Alchemy World Order!');

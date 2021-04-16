@@ -201,8 +201,8 @@ const quests = {
             'aaaa': {
                 prompt: 'Vibranium is faaaaaake.',
                 responses: {
-                    'response1': 'bbbb (takes you to message2)',
-                    'response3': 'bbbb (takes you to message2)'
+                    'response1 (takes you to message2)': 'bbbb',
+                    'response3 (takes you to message2)': 'bbbb'
                 }
             },
             'bbbb': {
